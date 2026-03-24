@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="badge-bg" x1="16" x2="104" y1="14" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79BC52" />
+      <stop offset=".55" stop-color="#4E7F2E" />
+      <stop offset="1" stop-color="#223916" />
+    </linearGradient>
+    <linearGradient id="badge-gold" x1="42" x2="83" y1="15" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3C76F" />
+      <stop offset="1" stop-color="#A8741F" />
+    </linearGradient>
+    <filter id="shadow" width="108" height="108" x="6" y="8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feColorMatrix values="0 0 0 0 0.06 0 0 0 0 0.11 0 0 0 0 0.06 0 0 0 0.28 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path fill="url(#badge-bg)" d="M60 12c13.8 0 27 5.48 36.77 15.23A52 52 0 0 1 112 64c0 13.8-5.48 27-15.23 36.77A52 52 0 0 1 60 116c-13.8 0-27-5.48-36.77-15.23A52 52 0 0 1 8 64c0-13.8 5.48-27 15.23-36.77A52 52 0 0 1 60 12Z"/>
+    <path stroke="#DDE8CC" stroke-opacity=".34" stroke-width="2" d="M26 74c9-18 19-27 31-27 13.5 0 21.17 9.67 30 25M18 57c10.67-6.67 21.67-10 33-10 17.67 0 32.67 5 45 15"/>
+    <circle cx="60" cy="64" r="40" fill="#162215" fill-opacity=".18"/>
+    <rect x="26" y="60" width="16" height="23" rx="4" fill="#F6F1DB"/>
+    <rect x="48" y="49" width="16" height="34" rx="4" fill="#F6F1DB"/>
+    <rect x="70" y="40" width="16" height="43" rx="4" fill="#F6F1DB"/>
+    <path stroke="#F6F1DB" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m25 84 16-14 12 8 25-30 16 12"/>
+    <path fill="url(#badge-gold)" d="m74.8 17.5 4.05 8.68 9.5.84-7.03 6.1 2.08 9.06-8.3-4.6-8.3 4.6 2.08-9.06-7.03-6.1 9.5-.84 3.45-8.68Z"/>
+    <path fill="#0F170F" fill-opacity=".22" d="M59.5 27c-7.18 0-13 5.82-13 13v1.26c0 3.85 2.32 7.32 5.88 8.8 2.85 1.18 4.62 3.96 4.62 7.04V61h5v-3.9c0-3.06 1.77-5.82 4.6-7.02a9.5 9.5 0 0 0 5.9-8.82V40c0-7.18-5.82-13-13-13Zm-8.5 13a8.5 8.5 0 0 1 17 0v1.26a8.5 8.5 0 0 1-5.26 7.87A11.63 11.63 0 0 0 55 57.1V61h-1.5v-3.9c0-4.66-2.77-8.89-7.02-10.66A8.5 8.5 0 0 1 51 41.26V40Z"/>
+  </g>
+</svg>
