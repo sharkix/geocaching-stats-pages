@@ -1,122 +1,159 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
   <defs>
-    <linearGradient id="hero-bg" x1="105" x2="866" y1="66" y2="650" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EFF1DF" />
-      <stop offset=".55" stop-color="#D8E4BC" />
-      <stop offset="1" stop-color="#B9D28A" />
+    <!-- Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#c8e6c9"/>
     </linearGradient>
-    <linearGradient id="panel-bg" x1="563" x2="860" y1="146" y2="416" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1E3117" />
-      <stop offset="1" stop-color="#2F4A20" />
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#388e3c"/>
     </linearGradient>
-    <linearGradient id="trail" x1="136" x2="492" y1="480" y2="271" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A36B26" />
-      <stop offset="1" stop-color="#D1A148" />
+    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#795548"/>
+      <stop offset="100%" stop-color="#6d4c41"/>
     </linearGradient>
-    <linearGradient id="frog" x1="178" x2="333" y1="289" y2="476" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8FD863" />
-      <stop offset="1" stop-color="#4E812F" />
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#2e7d32"/>
     </linearGradient>
-    <linearGradient id="cache" x1="314" x2="490" y1="382" y2="544" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C59B4A" />
-      <stop offset="1" stop-color="#7A5924" />
-    </linearGradient>
-    <filter id="soft" width="840" height="600" x="60" y="60" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feGaussianBlur in="BackgroundImageFix" stdDeviation="12"/>
-      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
-      <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
-    </filter>
-    <filter id="shadow" width="260" height="220" x="269" y="339" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset dy="12"/>
-      <feGaussianBlur stdDeviation="12"/>
-      <feColorMatrix values="0 0 0 0 0.07 0 0 0 0 0.12 0 0 0 0 0.06 0 0 0 0.22 0"/>
-      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-      <feBlend in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
-    </filter>
-    <filter id="card-shadow" width="348" height="324" x="545" y="124" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset dy="20"/>
-      <feGaussianBlur stdDeviation="18"/>
-      <feColorMatrix values="0 0 0 0 0.06 0 0 0 0 0.12 0 0 0 0 0.06 0 0 0 0.28 0"/>
-      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-      <feBlend in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.2"/>
     </filter>
   </defs>
-
-  <g filter="url(#soft)">
-    <rect x="76" y="76" width="808" height="568" rx="44" fill="url(#hero-bg)"/>
-    <path stroke="#769457" stroke-opacity=".22" stroke-width="3" d="M116 211c78-70 167-102 267-96 74 4 131 31 172 82 29 36 62 57 99 62 56 8 102-12 138-60" />
-    <path stroke="#769457" stroke-opacity=".16" stroke-width="3" d="M135 247c73-43 150-59 232-48 43 6 87 22 132 50 63 39 121 54 173 45 36-6 72-24 108-55" />
-    <path stroke="#769457" stroke-opacity=".14" stroke-width="3" d="M112 534c111-85 225-123 342-113 110 9 205 56 286 140" />
-
-    <path stroke="url(#trail)" stroke-dasharray="10 12" stroke-linecap="round" stroke-width="8" d="M156 516c92-31 163-82 215-154 27-38 67-72 121-103 31-18 61-47 90-87" />
-    <circle cx="157" cy="516" r="14" fill="#D59E3F"/>
-    <circle cx="157" cy="516" r="7" fill="#FFF6D7"/>
-    <path fill="#D59E3F" d="m569 154 11.3 24.2 26.4 2.33-19.56 16.98 5.8 25.25-23.05-12.76-23.06 12.76 5.8-25.25-19.56-16.98 26.43-2.33L569 154Z"/>
-
-    <g filter="url(#card-shadow)">
-      <rect x="581" y="160" width="276" height="252" rx="28" fill="url(#panel-bg)"/>
-      <rect x="606" y="188" width="102" height="14" rx="7" fill="#DDE6C5" fill-opacity=".86"/>
-      <rect x="606" y="214" width="63" height="10" rx="5" fill="#9DB47C" fill-opacity=".65"/>
-      <rect x="606" y="251" width="34" height="111" rx="10" fill="#88C159"/>
-      <rect x="654" y="224" width="34" height="138" rx="10" fill="#D5A347"/>
-      <rect x="702" y="277" width="34" height="85" rx="10" fill="#E8E1C7"/>
-      <rect x="750" y="203" width="34" height="159" rx="10" fill="#5F9341"/>
-      <path stroke="#E8E1C7" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="m611 337 46-51 39 24 60-72 39 30"/>
-      <path d="M754 231h68" stroke="#D5E0BF" stroke-linecap="round" stroke-opacity=".18" stroke-width="2"/>
-      <path d="M754 258h68" stroke="#D5E0BF" stroke-linecap="round" stroke-opacity=".18" stroke-width="2"/>
-      <path d="M754 285h68" stroke="#D5E0BF" stroke-linecap="round" stroke-opacity=".18" stroke-width="2"/>
-      <path d="M754 312h68" stroke="#D5E0BF" stroke-linecap="round" stroke-opacity=".18" stroke-width="2"/>
-      <circle cx="793" cy="213" r="23" fill="#1C2815" stroke="#91B967" stroke-width="3"/>
-      <path fill="#E4C76A" d="m793 198.5 3.7 7.85 8.62.76-6.39 5.54 1.89 8.24-7.32-4.05-7.31 4.05 1.89-8.24-6.4-5.54 8.63-.76 3.72-7.85Z"/>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#skyGrad)"/>
+  
+  <!-- Distant hills -->
+  <ellipse cx="200" cy="320" rx="250" ry="80" fill="#81c784" opacity="0.6"/>
+  <ellipse cx="600" cy="310" rx="300" ry="90" fill="#66bb6a" opacity="0.5"/>
+  
+  <!-- Ground -->
+  <path d="M0 280 Q200 260 400 280 T800 270 L800 400 L0 400 Z" fill="url(#groundGrad)"/>
+  
+  <!-- Trail path -->
+  <path d="M-20 350 Q100 320 200 340 Q300 360 400 330 Q500 300 600 320 Q700 340 820 310" 
+        stroke="url(#pathGrad)" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Trees -->
+  <g filter="url(#shadow)">
+    <!-- Tree 1 -->
+    <rect x="80" y="240" width="12" height="60" fill="#5d4037"/>
+    <polygon points="86,160 40,240 132,240" fill="#2e7d32"/>
+    <polygon points="86,190 50,250 122,250" fill="#388e3c"/>
+    
+    <!-- Tree 2 -->
+    <rect x="680" y="220" width="16" height="70" fill="#5d4037"/>
+    <polygon points="688,130 630,220 746,220" fill="#2e7d32"/>
+    <polygon points="688,165 645,235 731,235" fill="#388e3c"/>
+    
+    <!-- Tree 3 (smaller) -->
+    <rect x="160" y="260" width="8" height="40" fill="#5d4037"/>
+    <polygon points="164,200 135,260 193,260" fill="#43a047"/>
+  </g>
+  
+  <!-- Cache box (main focus) -->
+  <g filter="url(#shadow)" transform="translate(340, 200)">
+    <!-- Box body -->
+    <rect x="0" y="20" width="120" height="80" rx="8" fill="url(#boxGrad)"/>
+    <!-- Box lid -->
+    <rect x="-5" y="0" width="130" height="25" rx="4" fill="#43a047"/>
+    <!-- Box stripe -->
+    <rect x="10" y="35" width="100" height="8" fill="#fff" opacity="0.3"/>
+    <!-- Lock icon -->
+    <circle cx="60" cy="70" r="12" fill="#ffeb3b"/>
+    <rect x="54" y="58" width="12" height="16" rx="2" fill="#ffc107"/>
+    <path d="M55 66 Q60 56 65 66" stroke="#795548" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Stats chart floating -->
+  <g filter="url(#shadow)" transform="translate(520, 80)">
+    <rect x="0" y="0" width="160" height="100" rx="8" fill="white" opacity="0.95"/>
+    <!-- Chart bars -->
+    <rect x="20" y="60" width="20" height="30" rx="2" fill="#4caf50"/>
+    <rect x="50" y="40" width="20" height="50" rx="2" fill="#66bb6a"/>
+    <rect x="80" y="25" width="20" height="65" rx="2" fill="#81c784"/>
+    <rect x="110" y="50" width="20" height="40" rx="2" fill="#a5d6a7"/>
+    <!-- Chart line -->
+    <path d="M25 55 L55 35 L85 20 L115 45" stroke="#2e7d32" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="25" cy="55" r="4" fill="#2e7d32"/>
+    <circle cx="55" cy="35" r="4" fill="#2e7d32"/>
+    <circle cx="85" cy="20" r="4" fill="#2e7d32"/>
+    <circle cx="115" cy="45" r="4" fill="#2e7d32"/>
+  </g>
+  
+  <!-- Calendar icon floating -->
+  <g filter="url(#shadow)" transform="translate(100, 100)">
+    <rect x="0" y="0" width="90" height="80" rx="6" fill="white" opacity="0.95"/>
+    <rect x="0" y="0" width="90" height="22" rx="6" fill="#e53935"/>
+    <rect x="0" y="16" width="90" height="6" fill="#e53935"/>
+    <!-- Calendar grid -->
+    <g fill="#424242" font-size="10" font-family="sans-serif" text-anchor="middle">
+      <text x="20" y="42">1</text>
+      <text x="45" y="42">2</text>
+      <text x="70" y="42">3</text>
+      <text x="20" y="58">4</text>
+      <circle cx="45" cy="54" r="9" fill="#4caf50"/>
+      <text x="45" y="58" fill="white" font-weight="bold">5</text>
+      <text x="70" y="58">6</text>
+      <text x="20" y="74">7</text>
+      <text x="45" y="74">8</text>
+      <text x="70" y="74">9</text>
     </g>
-
-    <g filter="url(#shadow)">
-      <path fill="url(#cache)" d="M313 405c0-10.49 8.51-19 19-19h134c10.49 0 19 8.51 19 19v112c0 10.49-8.51 19-19 19H332c-10.49 0-19-8.51-19-19V405Z"/>
-      <path fill="#523A17" fill-opacity=".35" d="M313 439h172v78c0 10.49-8.51 19-19 19H332c-10.49 0-19-8.51-19-19v-78Z"/>
-      <path fill="#DFC475" d="M326 371c0-9.94 8.06-18 18-18h110c9.94 0 18 8.06 18 18v29H326v-29Z"/>
-      <path fill="#87652A" d="M326 392h146l-18 32H344l-18-32Z"/>
-      <rect x="344" y="430" width="109" height="18" rx="9" fill="#FFF4D1" fill-opacity=".9"/>
-      <rect x="344" y="460" width="35" height="47" rx="6" fill="#F5ECD0"/>
-      <rect x="389" y="446" width="35" height="61" rx="6" fill="#90C862"/>
-      <rect x="434" y="472" width="19" height="35" rx="6" fill="#D7A449"/>
-      <path stroke="#FFF4D1" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="m348 507 34-28 30 14 36-44"/>
+  </g>
+  
+  <!-- D/T matrix floating -->
+  <g filter="url(#shadow)" transform="translate(220, 60)">
+    <rect x="0" y="0" width="80" height="70" rx="6" fill="white" opacity="0.95"/>
+    <!-- Grid -->
+    <g stroke="#e0e0e0" stroke-width="1">
+      <line x1="20" y1="15" x2="20" y2="65"/>
+      <line x1="40" y1="15" x2="40" y2="65"/>
+      <line x1="60" y1="15" x2="60" y2="65"/>
+      <line x1="5" y1="27" x2="75" y2="27"/>
+      <line x1="5" y1="40" x2="75" y2="40"/>
+      <line x1="5" y1="53" x2="75" y2="53"/>
     </g>
-
-    <g transform="translate(138 224)">
-      <ellipse cx="111" cy="234" fill="#B88741" fill-opacity=".25" rx="118" ry="28"/>
-      <ellipse cx="113" cy="119" fill="#4E7032" rx="94" ry="83"/>
-      <ellipse cx="112" cy="131" fill="#83C95B" rx="78" ry="64"/>
-      <ellipse cx="77" cy="32" fill="#6CA844" rx="26" ry="27"/>
-      <ellipse cx="151" cy="32" fill="#6CA844" rx="26" ry="27"/>
-      <ellipse cx="82" cy="37" fill="#F5F1D9" rx="13" ry="15"/>
-      <ellipse cx="146" cy="37" fill="#F5F1D9" rx="13" ry="15"/>
-      <circle cx="84" cy="40" r="6" fill="#203217"/>
-      <circle cx="144" cy="40" r="6" fill="#203217"/>
-      <circle cx="86" cy="37" r="2" fill="#fff"/>
-      <circle cx="146" cy="37" r="2" fill="#fff"/>
-      <ellipse cx="113" cy="133" fill="#B9E08C" rx="39" ry="31"/>
-      <path fill="#31501E" d="M91 74c10 9 36 9 45 0-2 11-12 18-22 18-11 0-20-7-23-18Z"/>
-      <path fill="#6B4B22" d="M174 102c20-11 41-7 54 8l-18 13c-8-9-19-11-34-4l-2-17Z"/>
-      <rect width="24" height="30" x="219" y="87" fill="#5C4525" rx="8" transform="rotate(9.02 219 87)"/>
-      <path fill="#CFA252" d="M98 172c-14 11-26 28-32 49l-28-13c8-26 24-49 45-65l15 29Z"/>
-      <path fill="#CFA252" d="M127 174c17 8 34 24 48 47l28-13c-16-29-37-50-61-61l-15 27Z"/>
-      <path stroke="#2C461A" stroke-linecap="round" stroke-width="12" d="M67 206c-11 0-19 9-24 22M160 206c10 0 19 9 24 22"/>
-      <path fill="#DFA84B" d="m226 83 4.8 10.2 11.2.98-8.3 7.2 2.46 10.74-9.76-5.4-9.77 5.4 2.46-10.74-8.29-7.2 11.2-.98 4.8-10.2Z"/>
-      <circle cx="241" cy="163" r="18" fill="#F4EBCB"/>
-      <path fill="#4E7F2E" d="M241 147c4.4 0 8.53 1.75 11.64 4.86A16.43 16.43 0 0 1 257.5 163c0 4.4-1.75 8.53-4.86 11.64A16.43 16.43 0 0 1 241 179.5c-4.4 0-8.53-1.75-11.64-4.86A16.43 16.43 0 0 1 224.5 163c0-4.4 1.75-8.53 4.86-11.64A16.43 16.43 0 0 1 241 147Zm-6.5 16.5 6.5-10.5 6.5 10.5h-13Z"/>
-      <rect x="228" y="163" width="26" height="3.5" rx="1.75" fill="#4E7F2E"/>
-    </g>
-
-    <rect x="609" y="464" width="96" height="36" rx="18" fill="#F8F2D8"/>
-    <rect x="609" y="510" width="120" height="36" rx="18" fill="#EEF3DD"/>
-    <rect x="738" y="464" width="108" height="36" rx="18" fill="#F8F2D8"/>
-    <text x="633" y="487" fill="#334A24" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="700">Calendar</text>
-    <text x="633" y="533" fill="#334A24" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="700">Jasmer</text>
-    <text x="775" y="487" fill="#334A24" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="700">D/T Grid</text>
+    <!-- Filled cells -->
+    <rect x="21" y="28" width="18" height="11" fill="#4caf50" opacity="0.8"/>
+    <rect x="41" y="41" width="18" height="11" fill="#4caf50" opacity="0.6"/>
+    <rect x="1" y="54" width="18" height="10" fill="#4caf50" opacity="0.4"/>
+    <rect x="61" y="16" width="13" height="10" fill="#4caf50" opacity="0.9"/>
+  </g>
+  
+  <!-- Location markers -->
+  <g fill="#e53935">
+    <path d="M250 290 L250 270 L260 280 Z"/>
+    <circle cx="250" cy="265" r="8"/>
+    <circle cx="250" cy="265" r="3" fill="white"/>
+  </g>
+  <g fill="#2196f3">
+    <path d="M550 310 L550 290 L560 300 Z"/>
+    <circle cx="550" cy="285" r="8"/>
+    <circle cx="550" cy="285" r="3" fill="white"/>
+  </g>
+  
+  <!-- Compass rose (small) -->
+  <g transform="translate(720, 320)">
+    <circle cx="0" cy="0" r="25" fill="white" opacity="0.9" filter="url(#shadow)"/>
+    <polygon points="0,-18 4,-4 0,0 -4,-4" fill="#e53935"/>
+    <polygon points="0,18 4,4 0,0 -4,4" fill="#424242"/>
+    <polygon points="-18,0 -4,4 0,0 -4,-4" fill="#757575"/>
+    <polygon points="18,0 4,4 0,0 4,-4" fill="#757575"/>
+    <circle cx="0" cy="0" r="4" fill="#ffc107"/>
+  </g>
+  
+  <!-- Decorative clouds -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="150" cy="50" rx="40" ry="20"/>
+    <ellipse cx="180" cy="45" rx="30" ry="18"/>
+    <ellipse cx="130" cy="55" rx="25" ry="12"/>
+    
+    <ellipse cx="650" cy="70" rx="35" ry="18"/>
+    <ellipse cx="680" cy="65" rx="28" ry="15"/>
+    <ellipse cx="625" cy="75" rx="22" ry="10"/>
   </g>
 </svg>
