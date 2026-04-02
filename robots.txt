@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Public shared profiles
+Allow: /u/
+
+# Disallow internal/auth routes
+Disallow: /admin/
+Disallow: /login
+Disallow: /signup
+Disallow: /settings
+
+Sitemap: https://geocaching-stats.vercel.app/sitemap.xml
